@@ -1,0 +1,21 @@
+extends baseTemplate
+
+block content 
+  h1 This is a dynamic user Overview
+  div
+    table.table-header
+      thead
+        tr
+          th(scope='col') First Name
+          th(scope='col') Last Name
+          th(scope='col') Email
+
+
+      tbody
+        each user in users 
+          tr.table-secondary
+            td=user.firstName
+            td=user.lastName
+            td=user.email
+
+ 

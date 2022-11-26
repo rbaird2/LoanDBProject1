@@ -1,0 +1,23 @@
+extends baseTemplate
+
+block content 
+  h1 This is a dynamic customer Overview
+  div
+    table.table-header
+      thead
+        tr
+          th(scope='col') ID
+          th(scope='col') First Name
+          th(scope='col') Last Name
+          th(scope='col') DOB
+          th(scope='col') Gender
+          
+      tbody
+        each customer in customers 
+          tr.table-secondary
+            td=customer.customerId
+            td=customer.firstName
+            td=customer.lastName
+            td=customer.dateOfBirth
+            td=customer.gender
+ 

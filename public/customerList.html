@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,400i,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title> Loan Database </title>
+  </head>
+  <h1>This is dynamic customer Overview</h1>
+  <div class="">
+    <table class="table-header">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">DOB</th>
+          <th scope="col">Gender</th>
+        </tr>
+      </thead>
+      <tbody>
+        each course in courses 
+          <tr class="table-secondary">
+            <td>#{customer.customerId}</th>
+            <td>#{customer.firstName}</td>
+            <td>#{customer.lastName}</td>
+            <td>#{customer.dateOfBirth}</td>
+            <td>#{customer.gender}</td>
+          </tr>
+      </tbody>
+    </table>

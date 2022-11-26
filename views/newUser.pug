@@ -1,0 +1,34 @@
+extends baseTemplate 
+
+block content
+    main.main
+    .card-container
+        .card
+        .card__header
+            .card__details
+            h4.card__sub-heading New User 
+            p.card__text
+                | Please enter the following Details
+            .card__data
+                form(method='POST' action='/signup')
+                    label(for='firstName') First name:
+                    input#firstName(type='firstName' name='firstName')
+                    br
+                    br
+                    label(for='lastName') Last name:
+                    input#lastName(type='lastName' name='lastName')
+                    br
+                    br
+                    label(for='email') Email:
+                    input#email(type='email' name='email')
+                    br
+                    br
+                    label(for='password') Password:
+                    input#password(type='password' name='password')
+                    br
+                    br
+                    label(for='cpassword') Confirm Password:
+                    input#cpassword(type='password' name='cpassword')
+                    br
+                    br
+                    input.card__sub-heading(type='submit' value='Submit')

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,400i,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title> Loan Database </title>
+  </head>
+  <h1>This is dynamic loan Overview</h1>
+  <div class="">
+    <table class="table-header">
+      <thead>
+        <tr>
+          <th scope="ID">Loan Number</th>
+          <th scope="col">Loan Type</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Rate</th>
+          <th scope="col">Term</th>
+        </tr>
+      </thead>
+      <tbody>
+        each loan in loans 
+          <tr class="table-secondary">
+            <td>#{loan.loanNumber}</th>
+            <td>#{loan.loanType}</td>
+            <td>#{loan.loanAmount}</td>
+            <td>#{loan.interestRate}</td>
+            <td>#{loan.loanTerm}</td>
+          </tr>
+      </tbody>
+    </table>
+    
