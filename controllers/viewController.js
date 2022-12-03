@@ -1,9 +1,11 @@
+// name: Raymond Baird
+// id: 1215758778
+// date created: 10/16/2022
+// description: project to utilize api and access MongoDB
+
 const loans = require('../dev-data/data/loans.json')
 const customers = require('../dev-data/data/customers.json')
 const users = require('../dev-data/data/users.json')
-
-
-
 
 exports.getCustomerList = async (req, res) => {
   res.status(200).render('customerList', {

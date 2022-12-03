@@ -1,3 +1,8 @@
+// name: Raymond Baird
+// id: 1215758778
+// date created: 10/16/2022
+// description: project to utilize api and access MongoDB
+
 const express = require('express');
 const viewController = require('../controllers/viewController');
 const userHandler = require('../controllers/userController');

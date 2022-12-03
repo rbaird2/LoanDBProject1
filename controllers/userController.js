@@ -1,4 +1,7 @@
-//** Code START
+// name: Raymond Baird
+// id: 1215758778
+// date created: 10/16/2022
+// description: project to utilize api and access MongoDB
 
 var mongoose = require('mongoose'),
 jwt = require('jsonwebtoken'),
@@ -32,10 +35,12 @@ exports.sign_in = function(req, res) {
           res.status(401).json({ message: 'Authentication failed. User not found.' });
         } else if (user) {
           if (!user.comparePassword(req.body.password)) {
-            res.status(401).json({ message: 'Authentication failed. Wrong password.' });
+           res.status(401).render('login', {
+            error: 'Invalid Login'
+           })
+            // res.status(401).json({ message: 'Authentication failed. Wrong password.' });
           } else {
             return res.json({token: jwt.sign({ email: user.email, fullName: user.fullName, _id: user._id}, 'RESTFULAPIs')});
-                   
           }
         }
       });
@@ -49,7 +54,6 @@ exports.loginRequired = function(req, res, next) {
       }
     };
     
-
 
 exports.getUserList =   async (req, res) => {
   try {

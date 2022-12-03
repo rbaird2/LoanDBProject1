@@ -10,14 +10,10 @@ block content
               h4.card__sub-heading Login
               p.ard__text Please enter the following Details
               .card__data
-             
-                form(method='POST' action="/login" )
-                  #error
-                    if error
-                      p.text-danger Error!!!
-                  label(for='rmail') Email:
+                 form(method='POST' action="/login" )
+                  label(for='email') Email:
                   input(type='text' id='email' name='email')
-                  label(for='fname') Password:
+                  label(for='password') Password:
                   input(type='password' id='password' name='password')          
                   input.card__sub-heading( type='submit' value='Log In')
                   

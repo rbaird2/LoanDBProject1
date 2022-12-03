@@ -1,4 +1,8 @@
-//** Code START
+// name: Raymond Baird
+// id: 1215758778
+// date created: 10/16/2022
+// description: project to utilize api and access MongoDB
+
 const Loan = require('./../models/loanModel');
 const APIFeatures = require('./../dataBaseManager/loanDbContext');
 
@@ -27,8 +31,6 @@ exports.getAllLoans =   async (req, res) => {  //SELECT all data
     });
   }
 };
-
-
   
 
 exports.getLoan = async (req, res) => {  //SELECT specific data

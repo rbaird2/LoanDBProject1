@@ -1,4 +1,7 @@
-//* Code START
+// name: Raymond Baird
+// id: 1215758778
+// date created: 10/16/2022
+// description: project to utilize api and access MongoDB
 
 // uses this code for all collections in the database
 

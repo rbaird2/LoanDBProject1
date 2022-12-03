@@ -1,4 +1,8 @@
-//** Code START
+// name: Raymond Baird
+// id: 1215758778
+// date created: 10/16/2022
+// description: project to utilize api and access MongoDB
+
 const Ledger = require('./../models/ledgerModel');
 const APIFeatures = require('./../dataBaseManager/loanDbContext');
 

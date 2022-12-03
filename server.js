@@ -6,6 +6,11 @@ dotenv.config({ path: './config.env' });
 var express = require('express'),
   port = process.env.PORT || 5000,
   mongoose = require('mongoose'),
+  // name: Raymond Baird
+// id: 1215758778
+// date created: 10/16/2022
+// description: project to utilize api and access MongoDB
+  
   User = require('./models/userModel'),
   bodyParser = require('body-parser'),
   jsonwebtoken = require('jsonwebtoken');
